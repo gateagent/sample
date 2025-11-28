@@ -1,7 +1,7 @@
 from langgraph.prebuilt import create_react_agent
 from gateagent import Client        ## Change1: Import GateAgent Client
 from langchain.callbacks import LangChainTracer  # or use Langfuse CallbackHandler
-r
+
 client = Client(api_key="YOUR_KEY") ## Change2: Replace with your API key
 tracer = LangChainTracer(client=client, project_name="my-audit-project")
 
